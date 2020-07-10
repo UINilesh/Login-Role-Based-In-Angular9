@@ -11,3 +11,45 @@
         </ul>
     </div>
 </div>
+<br>
+
+<br>
+ 
+<table class="table table-bordered">  
+    <tr>  
+      <th>Id</th>          
+      <th>Name</th>  
+      <th>Product Image</th>
+      <th>Price</th>    
+    </tr>  
+    <tr *ngFor="let emp of data">     
+      <td>  
+        {{emp.id}}  
+      </td>  
+       <td>  
+        {{emp.name}}        
+      </td>  
+      <td><img src="{{emp.imageUrl}}" width="100"></td>
+      <td>  
+        {{emp.price}}    
+      </td>  
+    </tr>  
+     <tr >   
+      <td>
+       Total Product = 
+      </td>   
+      <td>
+        {{totalfilter}}
+      </td>  
+     
+       <td>  
+        Total 
+      </td> 
+    
+      <td>  
+      {{sum}}  
+      </td>  
+    </tr>  
+  </table> 
+  <br>
+  <br>

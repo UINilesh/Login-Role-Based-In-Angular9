@@ -6,6 +6,7 @@ import { LoginComponent } from './login';
 import { AuthGuard } from './_helpers';
 import { Role } from './_models';
 import { WikipediaSearchComponent } from './wikipedia-search/wikipedia-search.component';
+import { AddformComponent } from './addform/addform.component';
 
 const routes: Routes = [
     {
@@ -27,6 +28,11 @@ const routes: Routes = [
         path:'search',
         component:WikipediaSearchComponent, canActivate:[AuthGuard] 
     },
+    {
+        path:'addform',
+        component:AddformComponent
+    },
+    
     // otherwise redirect to home
     { 
         path: '**', 

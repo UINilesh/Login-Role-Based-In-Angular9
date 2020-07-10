@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+ 
 import { WikipediaSearchComponent } from './wikipedia-search.component';
 
 describe('WikipediaSearchComponent', () => {
@@ -19,7 +19,5 @@ describe('WikipediaSearchComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  
 });
